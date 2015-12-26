@@ -6,69 +6,53 @@ $xpdo_meta_map['CheckHDaysItem']= array (
   'extends' => 'xPDOSimpleObject',
   'fields' => 
   array (
-    'name' => '',
-    'description' => '',
-    'active' => 1,
+    'from' => '',
+    'to' => '',
+    'month' => '',
+    'week' => '',
+    'day' => '',
   ),
   'fieldMeta' => 
   array (
-    'name' => 
+    'from' => 
     array (
       'dbtype' => 'varchar',
-      'precision' => '100',
+      'precision' => '10',
       'phptype' => 'string',
-      'null' => false,
-      'default' => '',
-    ),
-    'description' => 
-    array (
-      'dbtype' => 'text',
-      'phptype' => 'text',
       'null' => true,
       'default' => '',
     ),
-    'active' => 
+    'to' => 
     array (
-      'dbtype' => 'tinyint',
-      'precision' => '1',
-      'phptype' => 'boolean',
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
       'null' => true,
-      'default' => 1,
+      'default' => '',
     ),
-  ),
-  'indexes' => 
-  array (
-    'name' => 
+    'month' => 
     array (
-      'alias' => 'name',
-      'primary' => false,
-      'unique' => false,
-      'type' => 'BTREE',
-      'columns' => 
-      array (
-        'name' => 
-        array (
-          'length' => '',
-          'collation' => 'A',
-          'null' => false,
-        ),
-      ),
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
     ),
-    'active' => 
+    'week' => 
     array (
-      'alias' => 'active',
-      'primary' => false,
-      'unique' => false,
-      'type' => 'BTREE',
-      'columns' => 
-      array (
-        'active' => 
-        array (
-          'length' => '',
-          'collation' => 'A',
-          'null' => false,
-        ),
-      ),
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'day' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
     ),
   ),
 );

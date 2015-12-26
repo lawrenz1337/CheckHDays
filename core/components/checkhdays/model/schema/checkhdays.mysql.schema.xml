@@ -3,16 +3,11 @@
 	   version="1.1">
 
 	<object class="CheckHDaysItem" table="checkhdays_items" extends="xPDOSimpleObject">
-		<field key="name" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
-		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
-		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" null="true" default="1"/>
-
-		<index alias="name" name="name" primary="false" unique="false" type="BTREE">
-			<column key="name" length="" collation="A" null="false"/>
-		</index>
-		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
-			<column key="active" length="" collation="A" null="false"/>
-		</index>
+		<field key="from" dbtype="varchar" precision="10" phptype="string" null="true" default=""/>
+        <field key="to" dbtype="varchar" precision="10" phptype="string" null="true" default=""/>
+        <field key="month" dbtype="varchar" precision="10" phptype="string" null="true" default=""/>
+        <field key="week" dbtype="varchar" precision="10" phptype="string" null="true" default=""/>
+        <field key="day" dbtype="varchar" precision="10" phptype="string" null="true" default=""/>
 	</object>
 
 </model>
