@@ -11,7 +11,9 @@ if ($object->xpdo) {
             $modx->addPackage('checkhdays', $modelPath);
 
             $manager = $modx->getManager();
-            $objects = array();
+            $objects = array(
+                'CheckHDaysItem',
+            );
             $schemaFile = MODX_CORE_PATH . 'components/checkhdays/model/schema/checkhdays.mysql.schema.xml';
             if (is_file($schemaFile)) {
                 $schema = new SimpleXMLElement($schemaFile, 0, true);
