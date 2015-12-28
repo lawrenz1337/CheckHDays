@@ -200,43 +200,43 @@ Ext.extend(CheckHDays.grid.Items, MODx.grid.Grid, {
 			header: _('checkhdays_item_name'),
 			dataIndex: 'name',
 			sortable: true,
-			width: 200,
+			width: 150,
 		}, {
             header: _('checkhdays_item_description'),
             dataIndex: 'description',
             sortable: false,
-            width: 250,
+            width: 150,
         }, {
             header: _('checkhdays_item_from'),
             dataIndex: 'from',
             sortable: true,
-            width: 70,
+            width: 120,
         }, {
             header: _('checkhdays_item_to'),
             dataIndex: 'to',
             sortable: true,
-            width: 70,
+            width: 120,
         }, {
             header: _('checkhdays_item_month'),
             dataIndex: 'month',
             sortable: true,
-            width: 70,
+            width: 120,
         }, {
             header: _('checkhdays_item_week'),
             dataIndex: 'week',
             sortable: true,
-            width: 70,
+            width: 125,
         }, {
             header: _('checkhdays_item_day'),
             dataIndex: 'day',
             sortable: true,
-            width: 70,
+            width: 120,
         }, {
 			header: _('checkhdays_item_active'),
 			dataIndex: 'active',
 			renderer: CheckHDays.utils.renderBoolean,
 			sortable: true,
-			width: 100,
+			width: 65,
 		}];
 	},
 
