@@ -3,11 +3,11 @@
 $chunks = array();
 
 $tmp = array(
-	'tpl.modExtra.item' => array(
+	'tpl.CheckHDays.item' => array(
 		'file' => 'item',
 		'description' => '',
 	),
-	'tpl.modExtra.office' => array(
+	'tpl.CheckHDays.office' => array(
 		'file' => 'office',
 		'description' => '',
 	),

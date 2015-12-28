@@ -3,8 +3,8 @@
 $menus = array();
 
 $tmp = array(
-	'modextra' => array(
-		'description' => 'modextra_menu_desc',
+	'checkhdays' => array(
+		'description' => 'checkhdays_menu_desc',
 		'action' => array(
 			'controller' => 'index',
 		),
