@@ -9,6 +9,11 @@ $_lang['checkhdays_items'] = 'Items';
 $_lang['checkhdays_item_id'] = 'Id';
 $_lang['checkhdays_item_name'] = 'Name';
 $_lang['checkhdays_item_description'] = 'Description';
+$_lang['checkhdays_item_from'] = 'from';
+$_lang['checkhdays_item_to'] = 'to';
+$_lang['checkhdays_item_month'] = 'month';
+$_lang['checkhdays_item_week'] = 'week';
+$_lang['checkhdays_item_day'] = 'day';
 $_lang['checkhdays_item_active'] = 'Active';
 
 $_lang['checkhdays_item_create'] = 'Create Item';

@@ -29,13 +29,43 @@ Ext.extend(CheckHDays.window.CreateItem, MODx.Window, {
 			anchor: '99%',
 			allowBlank: false,
 		}, {
-			xtype: 'textarea',
-			fieldLabel: _('checkhdays_item_description'),
-			name: 'description',
-			id: config.id + '-description',
-			height: 150,
-			anchor: '99%'
-		}, {
+            xtype: 'textarea',
+            fieldLabel: _('checkhdays_item_description'),
+            name: 'description',
+            id: config.id + '-description',
+            height: 150,
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_from'),
+            name: 'from',
+            id: config.id + '-from',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_to'),
+            name: 'to',
+            id: config.id + '-to',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_month'),
+            name: 'month',
+            id: config.id + '-month',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_week'),
+            name: 'week',
+            id: config.id + '-week',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_day'),
+            name: 'day',
+            id: config.id + '-day',
+            anchor: '99%'
+        }, {
 			xtype: 'xcheckbox',
 			boxLabel: _('checkhdays_item_active'),
 			name: 'active',
@@ -93,6 +123,36 @@ Ext.extend(CheckHDays.window.UpdateItem, MODx.Window, {
 			anchor: '99%',
 			height: 150,
 		}, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_from'),
+            name: 'from',
+            id: config.id + '-from',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_to'),
+            name: 'to',
+            id: config.id + '-to',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_month'),
+            name: 'month',
+            id: config.id + '-month',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_week'),
+            name: 'week',
+            id: config.id + '-week',
+            anchor: '99%'
+        }, {
+            xtype: 'textfield',
+            fieldLabel: _('checkhdays_item_day'),
+            name: 'day',
+            id: config.id + '-day',
+            anchor: '99%'
+        }, {
 			xtype: 'xcheckbox',
 			boxLabel: _('checkhdays_item_active'),
 			name: 'active',

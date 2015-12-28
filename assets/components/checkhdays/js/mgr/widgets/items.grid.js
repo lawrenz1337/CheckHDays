@@ -46,14 +46,19 @@ CheckHDays.grid.Items = function (config) {
 Ext.extend(CheckHDays.grid.Items, MODx.grid.Grid, {
 	windows: {},
 
-	getMenu: function (grid, rowIndex) {
-		var ids = this._getSelectedIds();
-
-		var row = grid.getStore().getAt(rowIndex);
-		var menu = CheckHDays.utils.getMenu(row.data['actions'], this, ids);
-
-		this.addContextMenuItem(menu);
-	},
+    getMenu: function() {
+        var m = [];
+        m.push({
+            text: _('checkhdays_item_update')
+            ,handler: this.updateItem
+        });
+        m.push('-');
+        m.push({
+            text: _('checkhdays_item_remove')
+            ,handler: this.removeItem
+        });
+        this.addContextMenuItem(m);
+    },
 
 	createItem: function (btn, e) {
 		var w = MODx.load({
@@ -182,7 +187,7 @@ Ext.extend(CheckHDays.grid.Items, MODx.grid.Grid, {
 	},
 
 	getFields: function (config) {
-		return ['id', 'name', 'description', 'active', 'actions'];
+		return ['id', 'name', 'description', 'from', 'to', 'month', 'week', 'day', 'active'];
 	},
 
 	getColumns: function (config) {
@@ -197,23 +202,41 @@ Ext.extend(CheckHDays.grid.Items, MODx.grid.Grid, {
 			sortable: true,
 			width: 200,
 		}, {
-			header: _('checkhdays_item_description'),
-			dataIndex: 'description',
-			sortable: false,
-			width: 250,
-		}, {
+            header: _('checkhdays_item_description'),
+            dataIndex: 'description',
+            sortable: false,
+            width: 250,
+        }, {
+            header: _('checkhdays_item_from'),
+            dataIndex: 'from',
+            sortable: true,
+            width: 70,
+        }, {
+            header: _('checkhdays_item_to'),
+            dataIndex: 'to',
+            sortable: true,
+            width: 70,
+        }, {
+            header: _('checkhdays_item_month'),
+            dataIndex: 'month',
+            sortable: true,
+            width: 70,
+        }, {
+            header: _('checkhdays_item_week'),
+            dataIndex: 'week',
+            sortable: true,
+            width: 70,
+        }, {
+            header: _('checkhdays_item_day'),
+            dataIndex: 'day',
+            sortable: true,
+            width: 70,
+        }, {
 			header: _('checkhdays_item_active'),
 			dataIndex: 'active',
 			renderer: CheckHDays.utils.renderBoolean,
 			sortable: true,
 			width: 100,
-		}, {
-			header: _('checkhdays_grid_actions'),
-			dataIndex: 'actions',
-			renderer: CheckHDays.utils.renderActions,
-			sortable: false,
-			width: 100,
-			id: 'actions'
 		}];
 	},
 
