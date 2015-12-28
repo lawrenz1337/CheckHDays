@@ -2,7 +2,7 @@
 include_once 'setting.inc.php';
 
 $_lang['checkhdays'] = 'CheckHDays';
-$_lang['checkhdays_menu_desc'] = 'Расширение для проверки, является ли текущая дата праздником';
+$_lang['checkhdays_menu_desc'] = 'Расширение для проверки, является ли текущая дата праздником для MODX';
 $_lang['checkhdays_intro_msg'] = 'Вы можете выделять сразу несколько праздников при помощи Shift или Ctrl.';
 
 $_lang['checkhdays_items'] = 'Праздники';
