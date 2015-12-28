@@ -195,7 +195,7 @@ Ext.extend(CheckHDays.grid.Items, MODx.grid.Grid, {
 			header: _('checkhdays_item_id'),
 			dataIndex: 'id',
 			sortable: true,
-			width: 70
+			width: 30
 		}, {
 			header: _('checkhdays_item_name'),
 			dataIndex: 'name',

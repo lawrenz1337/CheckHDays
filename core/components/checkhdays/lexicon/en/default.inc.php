@@ -9,10 +9,10 @@ $_lang['checkhdays_items'] = 'Holidays';
 $_lang['checkhdays_item_id'] = 'Id';
 $_lang['checkhdays_item_name'] = 'Name';
 $_lang['checkhdays_item_description'] = 'Description';
-$_lang['checkhdays_item_from'] = 'From (Day of month)';
-$_lang['checkhdays_item_to'] = 'To (Day of month)';
-$_lang['checkhdays_item_month'] = 'Number of the month';
-$_lang['checkhdays_item_week'] = 'Number of the week';
+$_lang['checkhdays_item_from'] = 'From';
+$_lang['checkhdays_item_to'] = 'To';
+$_lang['checkhdays_item_month'] = 'Month (number)';
+$_lang['checkhdays_item_week'] = 'Week (number)';
 $_lang['checkhdays_item_day'] = 'Day of the week (number)';
 $_lang['checkhdays_item_active'] = 'Active';
 

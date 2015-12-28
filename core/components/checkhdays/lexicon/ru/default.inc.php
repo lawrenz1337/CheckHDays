@@ -11,8 +11,8 @@ $_lang['checkhdays_item_name'] = 'Название';
 $_lang['checkhdays_item_description'] = 'Описание';
 $_lang['checkhdays_item_from'] = 'От (День Месяца)';
 $_lang['checkhdays_item_to'] = 'До (День Месяца)';
-$_lang['checkhdays_item_month'] = 'Номер месяца';
-$_lang['checkhdays_item_week'] = 'Номер недели';
+$_lang['checkhdays_item_month'] = 'Месяц (номер)';
+$_lang['checkhdays_item_week'] = 'Неделя (номер)';
 $_lang['checkhdays_item_day'] = 'День недели';
 
 $_lang['checkhdays_item_create'] = 'Добавить праздник';
