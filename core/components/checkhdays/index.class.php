@@ -16,7 +16,7 @@ abstract class CheckHDaysMainController extends modExtraManagerController {
 		require_once $corePath . 'model/checkhdays/checkhdays.class.php';
 
 		$this->CheckHDays = new CheckHDays($this->modx);
-		//$this->addCss($this->CheckHDays->config['cssUrl'] . 'mgr/main.css');
+		$this->addCss($this->CheckHDays->config['cssUrl'] . 'mgr/main.css');
 		$this->addJavascript($this->CheckHDays->config['jsUrl'] . 'mgr/checkhdays.js');
 		$this->addHtml('
 		<script type="text/javascript">

@@ -2,7 +2,7 @@
 include_once 'setting.inc.php';
 
 $_lang['checkhdays'] = 'CheckHDays';
-$_lang['checkhdays_menu_desc'] = 'A sample Extra to develop from.';
+$_lang['checkhdays_menu_desc'] = 'Holidays checking component for MODX.';
 $_lang['checkhdays_intro_msg'] = 'You can select multiple items by holding Shift or Ctrl button.';
 
 $_lang['checkhdays_items'] = 'Items';
