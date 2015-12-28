@@ -8,6 +8,11 @@ $xpdo_meta_map['CheckHDaysItem']= array (
   array (
     'name' => '',
     'description' => '',
+    'from' => '',
+    'to' => '',
+    'month' => '',
+    'week' => '',
+    'day' => '',
     'active' => 1,
   ),
   'fieldMeta' => 
@@ -27,11 +32,52 @@ $xpdo_meta_map['CheckHDaysItem']= array (
       'null' => true,
       'default' => '',
     ),
+    'from' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'to' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'month' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'week' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'day' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '10',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
     'active' => 
     array (
       'dbtype' => 'tinyint',
       'precision' => '1',
       'phptype' => 'boolean',
+      'attributes' => 'unsigned',
       'null' => true,
       'default' => 1,
     ),

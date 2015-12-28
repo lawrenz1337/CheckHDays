@@ -1,7 +1,2 @@
 <?php
-
-/**
- * @package checkhdays
- */
-class CheckHDaysItem extends xPDOSimpleObject {
-}
+class CheckHDaysItem extends xPDOSimpleObject {}
