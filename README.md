@@ -1,14 +1,12 @@
 ## CheckHDays
 
-CheckHDays is a base Extra template that is useful when wanting to create a new
-Extra for MODx Revolution. One can git archive from this repository to start
-with all the file structure for beginning MODx Extra development pre-setup.
+CheckHDays is a checking holidays dates component for MODx Revo.
 
 ## How to Export
 
 First, clone this repository somewhere on your development machine:
 
-`git clone http://github.com/splittingred/CheckHDays.git ./`
+`git clone http://github.com/lawrenz1337/CheckHDays.git ./`
 
 Then, create the target directory where you want to create the file.
 
@@ -28,8 +26,8 @@ Now, you'll want to change references to CheckHDays in the files in your
 new copied-from-CheckHDays repo to whatever name of your new Extra will be. Once
 you've done that, you can create some System Settings:
 
-- 'mynamespace.core_path' - Point to /path/to/my/extra/core/components/extra/
-- 'mynamespace.assets_url' - /path/to/my/extra/assets/components/extra/
+- 'mynamespace.core_path' - Point to /path/to/my/extra/core/components/CheckHDays/
+- 'mynamespace.assets_url' - /path/to/my/extra/assets/components/CheckHDays/
 
 Then clear the cache. This will tell the Extra to look for the files located
 in these directories, allowing you to develop outside of the MODx webroot!
