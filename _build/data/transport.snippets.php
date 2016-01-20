@@ -7,6 +7,10 @@ $tmp = array(
 		'file' => 'checkhdays',
 		'description' => '',
 	),
+    'AjaxCheck' => array(
+        'file' => 'ajaxcheck',
+        'description' => '',
+    ),
 );
 
 foreach ($tmp as $k => $v) {

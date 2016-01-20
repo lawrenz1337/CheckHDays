@@ -29,49 +29,71 @@ Ext.extend(CheckHDays.window.CreateItem, MODx.Window, {
 			anchor: '99%',
 			allowBlank: false,
 		}, {
+            layout:'column'
+            ,border: false
+            ,anchor: '100%'
+            ,items: [{
+                columnWidth: .5
+                ,layout: 'form'
+                ,defaults: { msgTarget: 'under' }
+                ,border:false
+                ,items: [
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_from'),
+                        name: 'from',
+                        id: config.id + '-from',
+                        anchor: '99%'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_to'),
+                        name: 'to',
+                        id: config.id + '-to',
+                        anchor: '99%'
+                    }
+                    ,{
+                        xtype: 'xcheckbox',
+                        boxLabel: _('checkhdays_item_active'),
+                        name: 'active',
+                        id: config.id + '-active',
+                        anchor: '99%'
+                    }
+                ]
+            },{
+                columnWidth: .5
+                ,layout: 'form'
+                ,defaults: { msgTarget: 'under' }
+                ,border:false
+                ,items: [
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_month'),
+                        name: 'month',
+                        id: config.id + '-month',
+                        anchor: '99%'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_week'),
+                        name: 'week',
+                        id: config.id + '-week',
+                        anchor: '99%'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_day'),
+                        name: 'day',
+                        id: config.id + '-day',
+                        anchor: '99%'
+                    }
+                ]
+            }]
+        },{
             xtype: 'textarea',
             fieldLabel: _('checkhdays_item_description'),
             name: 'description',
             id: config.id + '-description',
             height: 150,
             anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_from'),
-            name: 'from',
-            id: config.id + '-from',
-            anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_to'),
-            name: 'to',
-            id: config.id + '-to',
-            anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_month'),
-            name: 'month',
-            id: config.id + '-month',
-            anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_week'),
-            name: 'week',
-            id: config.id + '-week',
-            anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_day'),
-            name: 'day',
-            id: config.id + '-day',
-            anchor: '99%'
-        }, {
-			xtype: 'xcheckbox',
-			boxLabel: _('checkhdays_item_active'),
-			name: 'active',
-			id: config.id + '-active',
-			checked: true,
-		}];
+        }];
 	},
 
 	loadDropZones: function() {
@@ -109,55 +131,78 @@ Ext.extend(CheckHDays.window.UpdateItem, MODx.Window, {
 			name: 'id',
 			id: config.id + '-id',
 		}, {
-			xtype: 'textfield',
-			fieldLabel: _('checkhdays_item_name'),
-			name: 'name',
-			id: config.id + '-name',
-			anchor: '99%',
-			allowBlank: false,
-		}, {
-			xtype: 'textarea',
-			fieldLabel: _('checkhdays_item_description'),
-			name: 'description',
-			id: config.id + '-description',
-			anchor: '99%',
-			height: 150,
-		}, {
             xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_from'),
-            name: 'from',
-            id: config.id + '-from',
-            anchor: '99%'
+            fieldLabel: _('checkhdays_item_name'),
+            name: 'name',
+            id: config.id + '-name',
+            anchor: '99%',
+            allowBlank: false,
         }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_to'),
-            name: 'to',
-            id: config.id + '-to',
+            layout:'column'
+            ,border: false
+            ,anchor: '100%'
+            ,items: [{
+                columnWidth: .5
+                ,layout: 'form'
+                ,defaults: { msgTarget: 'under' }
+                ,border:false
+                ,items: [
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_from'),
+                        name: 'from',
+                        id: config.id + '-from',
+                        anchor: '99%'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_to'),
+                        name: 'to',
+                        id: config.id + '-to',
+                        anchor: '99%'
+                    }
+                    ,{
+                        xtype: 'xcheckbox',
+                        boxLabel: _('checkhdays_item_active'),
+                        name: 'active',
+                        id: config.id + '-active',
+                        anchor: '99%'
+                    }
+                ]
+            },{
+                columnWidth: .5
+                ,layout: 'form'
+                ,defaults: { msgTarget: 'under' }
+                ,border:false
+                ,items: [
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_month'),
+                        name: 'month',
+                        id: config.id + '-month',
+                        anchor: '99%'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_week'),
+                        name: 'week',
+                        id: config.id + '-week',
+                        anchor: '99%'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: _('checkhdays_item_day'),
+                        name: 'day',
+                        id: config.id + '-day',
+                        anchor: '99%'
+                    }
+                ]
+            }]
+        },{
+            xtype: 'textarea',
+            fieldLabel: _('checkhdays_item_description'),
+            name: 'description',
+            id: config.id + '-description',
+            height: 150,
             anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_month'),
-            name: 'month',
-            id: config.id + '-month',
-            anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_week'),
-            name: 'week',
-            id: config.id + '-week',
-            anchor: '99%'
-        }, {
-            xtype: 'textfield',
-            fieldLabel: _('checkhdays_item_day'),
-            name: 'day',
-            id: config.id + '-day',
-            anchor: '99%'
-        }, {
-			xtype: 'xcheckbox',
-			boxLabel: _('checkhdays_item_active'),
-			name: 'active',
-			id: config.id + '-active',
-		}];
+        }];
 	},
 
 	loadDropZones: function() {

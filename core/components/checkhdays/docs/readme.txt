@@ -1,10 +1,10 @@
 --------------------
 CheckHDays
 --------------------
-Author: John Doe <john@doe.com>
+Author: Mikhail Dyachuk <dyachukmihail@gmail.com>
 --------------------
 
-A basic Extra for MODx Revolution.
+Checking holidays component for MODx Revo.
 
 Feel free to suggest ideas/improvements/bugs on GitHub:
-http://github.com/username/CheckHDays/issues
+http://github.com/lawrenz1337/CheckHDays/issues
